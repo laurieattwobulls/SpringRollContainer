@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="assets/css/container.css">
 
 	<!-- External dependencies -->
-	<script src="../components/bellhop/dist/bellhop.js"></script>
+	<script src="../node_modules/bellhop-iframe/bellhop-umd.js"></script>
 	<!-- Library and modules -->
 	<script src="../dist/container.js"></script>
 
@@ -33,7 +33,8 @@
 
 		// Open the application on button click
 		var loadGame = document.querySelector("#loadGame").addEventListener('click', function () {
-			container.openPath('app.html');
+			// container.openPath('app.html');
+			container.openPath('http://127.0.0.1:8000/'); // parkour cocos example SR 2.0
 		});
 
 		// Open the application on button click
